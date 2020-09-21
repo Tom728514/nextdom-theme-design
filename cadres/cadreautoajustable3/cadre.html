@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<!-- Pour ce menu, il faut placer le dossier /css et / image dans un repertoire cadre -->
+<!-- Pour ce menu, il faut placer le dossier /css et /image dans un repertoire cadre -->
 <html lang="fr">
 <head>
   </head>
@@ -9,7 +9,7 @@
     <div id="cadre">
       
       <div id="titre">salon</div><!-- ne modifier que le texte-->
-      <div id="picture"><i class="fas fa-lightbulb"></i></div> <!-- ne modifier que l'icone-->
+      <div id="picture"><i class="fas fa-lightbulb"></i></div> <!-- ne modifier que l'icône-->
       <div id="contenu"></div><!-- ne rien modifier -->
 </div>
   
@@ -17,11 +17,11 @@
  // ***********************************************
         // *** debut DES MODIFICATIONS par l'utilisateur ***
         // *********************************************** 
-   var pathData = "data/custom";// metre l'emplacement du pack cadre pour ,nextom data/custom, pour jeedom : montheme
-      var refcadre = "51"; // metre le code du cadre (51 52 53 54 55)
- var imgcadre = "92.png"; // metre la ref de l'image de contour du cadre si utile
-   var refimage = "F14.png"; // metre la ref de l'image de fond du cadre 
-  var cssFilename = "cadre51";// nom generique du css.le num correspond a la refcadre
+   var pathData = "data/custom";// mettre l'emplacement du pack cadre pour ,nextom data/custom, pour jeedom : montheme
+      var refcadre = "51"; // metttre le code du cadre (51 52 53 54 55)
+ var imgcadre = "92.png"; // metre la référence de l'image de contour du cadre si utile
+   var refimage = "F14.png"; // mettre la référence de l'image de fond du cadre 
+  var cssFilename = "cadre51";// nom générique du css.le num correspond a la refcadre
 var couleurtexte = "white"; // couleur texte.
 
 var fontsize = "22px";// texte.
@@ -36,7 +36,7 @@ var fontsize = "22px";// texte.
     var cssLink = document.createElement('link');
         cssLink.setAttribute('rel', 'stylesheet');
         cssLink.setAttribute('type', 'text/css');
-        // dĂ©commenter la ligne ci-dessous et commenter la ligne suivante pour forcer le chargement du css (en cas de modification)
+        // décommenter la ligne ci-dessous et commenter la ligne suivante pour forcer le chargement du css (en cas de modification)
     cssLink.setAttribute('href', pathData + '/themes/cadre/css/' + cssFilename +'.css?v=' + (new Date()).getTime());
      // cssLink.setAttribute('href', pathData + '/themes/cadre/css/' + cssFilename +'.css');
         document.getElementsByTagName('head')[0].appendChild(cssLink);
